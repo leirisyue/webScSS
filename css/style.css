@@ -10,6 +10,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #777777;
+    padding: 30px;
 }
 
 header {
@@ -44,6 +45,14 @@ header {
     color: white;
     text-transform: uppercase;
     margin-bottom: 60px;
+    animation: animationtest;
+    animation-duration: 2s;
+    /* số lần lập animation */
+    animation-iteration-count: 1;
+    /* thời gian chờ amination tạo ra */
+    animation-delay: 3s;
+    /* cách phân bố thời gian của hiệu ứng */
+    /* animation-timing-function: ; */
 }
 
 .heading-primary-main {
@@ -117,3 +126,20 @@ header {
 
 
 /* end-button */
+
+
+/* animtion text */
+
+@keyframes animationtest {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* end animtion text */
